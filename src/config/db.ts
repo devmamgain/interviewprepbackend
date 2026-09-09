@@ -9,7 +9,7 @@ export async function connectDb(): Promise<void> {
   await mongoose.connect(env.mongoUri);
   connected = true;
   // eslint-disable-next-line no-console
-  console.log(`[db] connected -> ${env.mongoUri}`);
+  console.log(`[db] connected `);
 }
 
 export async function disconnectDb(): Promise<void> {

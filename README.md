@@ -13,7 +13,7 @@ afterwards.
 | Backend    | Node.js + Express + TypeScript       |
 | Database   | MongoDB (Mongoose)                   |
 | Auth       | bcrypt + JWT in an httpOnly cookie   |
-| LLM        | Google Gemini (`gemini-1.5-flash`, free tier) |
+| LLM        | Google Gemini (`gemini-3.5-flash-lite`, free tier) |
 | Scraping   | `node-fetch` + `cheerio` + `robots-parser` (hand-rolled crawler, no headless browser) |
 | Search     | DuckDuckGo HTML endpoint (no API key required) |
 | Validation | Zod                                   |
@@ -31,6 +31,10 @@ npm install
 # Add MONGODB_URI, SESSION_SECRET, GEMINI_API_KEY.
 
 npm run dev
+
+## Batch evaluation
+
+npm run evaluate -- --input cases.json --output kits.json
 
 Get a free Gemini key at https://aistudio.google.com/app/apikey. No billing is required
 for the free tier used here.

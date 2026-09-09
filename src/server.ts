@@ -7,7 +7,7 @@ async function main() {
   const app = createApp();
   app.listen(env.port, () => {
     // eslint-disable-next-line no-console
-    console.log(`[server] listening on http://localhost:${env.port}`);
+    console.log(`[server] listening `);
   });
 }
 
